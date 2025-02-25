@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Management System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Pharmacy Management System</h1>
+      <button id="loginBtn">Pharmacist Login</button>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <!-- Photo Upload Section -->
+      <section class="upload-section">
+        <h2>Upload Prescription</h2>
+        <div class="upload-box">
+          <input type="file" id="prescriptionUpload" accept="image/*" hidden>
+          <label for="prescriptionUpload" class="upload-label">
+            <span>Click to Upload Prescription Photo</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Prescription Output Section -->
+      <section class="output-section">
+        <h2>Prescription Details</h2>
+        <div id="prescriptionOutput">
+          <p><strong>Name:</strong> <span id="patientName">-</span></p>
+          <p><strong>Dosage:</strong> <span id="dosage">-</span></p>
+        </div>
+      </section>
+
+      <!-- Data Visualization Button -->
+      <section class="visualization-section">
+        <button id="visualizeBtn">View Drug Sales Trends</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
